@@ -30,7 +30,7 @@ extension AcceptablePresenter: AcceptablePresenterProtocol{
         interactor.loadWeather()
     }
     func didLoad(date: String?){
-        view?.showDate(date: date ?? "No date!")
+        view?.showDate(date: date ?? "No date in the app!")
     }
     func didLoad(weather: Int?){
         let temperature = weather?.description ?? "No temperature!"
