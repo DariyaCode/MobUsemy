@@ -11,6 +11,7 @@ protocol ImageViewerViewProtocol: AnyObject {
 
 class ImageViewerViewController: UIViewController {
     // MARK: - Public
+    @IBOutlet weak var imageView: UIImageView!
     var presenter: ImageViewerPresenterProtocol?
 
     // MARK: - View lifecycle
