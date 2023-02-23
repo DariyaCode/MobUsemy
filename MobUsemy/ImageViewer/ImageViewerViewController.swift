@@ -7,6 +7,7 @@
 import UIKit
 
 protocol ImageViewerViewProtocol: AnyObject {
+    func showImage(image: UIImage?)
 }
 
 class ImageViewerViewController: UIViewController {
@@ -17,11 +18,12 @@ class ImageViewerViewController: UIViewController {
     // MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter?.viewDidLoaded()
         initialize()
     }
 }
 
-// MARK: - Private functions
+// MARK: - Privatze functions
 private extension ImageViewerViewController {
     func initialize() {
     }
@@ -29,4 +31,10 @@ private extension ImageViewerViewController {
 
 // MARK: - ImageViewerViewProtocol
 extension ImageViewerViewController: ImageViewerViewProtocol {
+    func showImage(image: UIImage?) {
+        DispatchQueue.main.async {
+            self.imageView.image = image
+        }
+    }
+    
 }

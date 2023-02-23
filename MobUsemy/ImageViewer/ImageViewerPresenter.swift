@@ -4,7 +4,10 @@
 //  Created by Dariya Gecher on 09.02.2023
 //
 
+import UIKit
+
 protocol ImageViewerPresenterProtocol: AnyObject {
+    func viewDidLoaded()
 }
 
 class ImageViewerPresenter {
@@ -19,4 +22,9 @@ class ImageViewerPresenter {
 }
 
 extension ImageViewerPresenter: ImageViewerPresenterProtocol {
+    func viewDidLoaded() {
+        let image = interactor.getImageForCurrentTemperature()
+        view?.showImage(image: image)
+    }
+    
 }
