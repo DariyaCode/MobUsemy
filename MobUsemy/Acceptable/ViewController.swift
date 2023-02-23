@@ -16,12 +16,19 @@ class ViewController: UIViewController {
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var weatherLabel: UILabel!
     
+    
     var presenter: AcceptablePresenterProtocol?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoaded()
     }
+    
+    @IBAction func didTapImageButton(_ sender: Any) {
+        presenter?.didTapImageButton()
+    }
+    
+    
 }
 
 extension ViewController: AcceptableViewProtocol{

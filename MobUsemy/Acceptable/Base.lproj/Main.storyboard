@@ -34,13 +34,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9n-JT-Jr0">
+                                <rect key="frame" x="95" y="731.66666666666663" width="203" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Show Image"/>
+                                <connections>
+                                    <action selector="didTapImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ApQ-NQ-0qV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="A9n-JT-Jr0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="0Qq-cy-gAN"/>
                             <constraint firstItem="zzR-We-e1L" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="48l-ww-ImG"/>
                             <constraint firstItem="np6-mL-e5n" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7Id-5M-lr7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A9n-JT-Jr0" secondAttribute="trailing" constant="95" id="IrX-QF-hrq"/>
                             <constraint firstItem="np6-mL-e5n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="170" id="ewF-TN-ZO8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="A9n-JT-Jr0" secondAttribute="bottom" constant="52" id="kbC-cL-dZs"/>
                             <constraint firstItem="zzR-We-e1L" firstAttribute="top" secondItem="np6-mL-e5n" secondAttribute="bottom" constant="134" id="vZX-Oh-oRo"/>
                         </constraints>
                     </view>

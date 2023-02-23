@@ -24,7 +24,7 @@
 		19F8C527299502210038372E /* ImageViewerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F8C522299502210038372E /* ImageViewerRouter.swift */; };
 		19F8C528299502210038372E /* ImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F8C523299502210038372E /* ImageViewerViewController.swift */; };
 		19F8C529299502210038372E /* ImageViewerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F8C524299502210038372E /* ImageViewerInteractor.swift */; };
-		19F8C52B2995023B0038372E /* ImageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F8C52A2995023B0038372E /* ImageView.storyboard */; };
+		19F8C52B2995023B0038372E /* ImageViewer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F8C52A2995023B0038372E /* ImageViewer.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +47,7 @@
 		19F8C522299502210038372E /* ImageViewerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerRouter.swift; sourceTree = "<group>"; };
 		19F8C523299502210038372E /* ImageViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerViewController.swift; sourceTree = "<group>"; };
 		19F8C524299502210038372E /* ImageViewerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerInteractor.swift; sourceTree = "<group>"; };
-		19F8C52A2995023B0038372E /* ImageView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageView.storyboard; sourceTree = "<group>"; };
+		19F8C52A2995023B0038372E /* ImageViewer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageViewer.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +138,7 @@
 				19F8C522299502210038372E /* ImageViewerRouter.swift */,
 				19F8C523299502210038372E /* ImageViewerViewController.swift */,
 				19F8C524299502210038372E /* ImageViewerInteractor.swift */,
-				19F8C52A2995023B0038372E /* ImageView.storyboard */,
+				19F8C52A2995023B0038372E /* ImageViewer.storyboard */,
 			);
 			path = ImageViewer;
 			sourceTree = "<group>";
@@ -202,7 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				192028EE2993E47E0020C73C /* LaunchScreen.storyboard in Resources */,
-				19F8C52B2995023B0038372E /* ImageView.storyboard in Resources */,
+				19F8C52B2995023B0038372E /* ImageViewer.storyboard in Resources */,
 				192028EB2993E47E0020C73C /* Assets.xcassets in Resources */,
 				192028E92993E47B0020C73C /* Main.storyboard in Resources */,
 			);

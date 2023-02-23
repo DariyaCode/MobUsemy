@@ -9,6 +9,7 @@ import Foundation
 
 protocol AcceptablePresenterProtocol: AnyObject{
     func viewDidLoaded()
+    func didTapImageButton()
     func didLoad(date: String?)
     func didLoad(weather: Int?)
 }
@@ -25,10 +26,18 @@ class AcceptablePresenter{
 }
 
 extension AcceptablePresenter: AcceptablePresenterProtocol{
+    
+    
     func viewDidLoaded(){
         interactor.loadDate()
         interactor.loadWeather()
     }
+    
+    func didTapImageButton() {
+        let temperature = interactor.temperature
+        router.openImage(for: temperature)
+    }
+    
     func didLoad(date: String?){
         view?.showDate(date: date ?? "No date in the app!")
     }
